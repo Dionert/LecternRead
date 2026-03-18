@@ -101,7 +101,7 @@ public class LecternCommand implements CommandExecutor {
      * @param player the player who issued the command.
      */
     private void handleInfo(Player player) {
-        if (!player.hasPermission("lecternbook.read")) {
+        if (!player.hasPermission("lecternread.read")) {
             Messages.send(player, plugin.getPluginConfig().getMessage("no-permission", "&e[LR] &cYou don't have permission to do this."));
             return;
         }
