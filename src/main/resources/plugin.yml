@@ -1,0 +1,19 @@
+name: LecternRead
+version: '1.0'
+main: net.dionnek.lr.LecternRead
+api-version: '1.21'
+author: Dionnek
+
+commands:
+  lr:
+    description: Read books placed on lecterns.
+    usage: /lr <read|info|help|reload>
+    permission: lecternread.read
+
+permissions:
+  lecternread.read:
+    description: Allows reading books from lecterns.
+    default: true
+  lecternread.reload:
+    description: Allows reloading the LecternRead configuration.
+    default: op

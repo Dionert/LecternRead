@@ -1,0 +1,39 @@
+# LecternRead Configuration
+
+# Whether left-clicking a lectern reads the full book to the player in chat.
+click-to-read: true
+
+# Whether to notify the player when they left-click a lectern with no book.
+# Only applies when click-to-read is true.
+notify-empty-lectern: false
+
+messages:
+  # Shown when the player lacks the required permission.
+  no-permission: "&e[LR] &cYou don't have permission to do this."
+
+  # Shown when the player is not looking at a lectern.
+  not-looking-at-lectern: "&e[LR] &fYou are not looking at a lectern."
+
+  # Shown when the lectern holds no written book.
+  no-book: "&e[LR] &fThere is no book on this lectern."
+
+  # Shown when the book contains no pages.
+  no-pages: "&e[LR] &fThis book has no pages."
+
+  # Header shown above the full book output.
+  book-header: "&e[LR] &7Reading &f\"{title}\" &7by &f{author} &7({total} pages)"
+
+  # Divider shown between pages when reading all pages.
+  page-divider: "&8--- &ePage {page}/{total} &8---"
+
+  # Header shown when reading a single page.
+  page-header: "&e[LR] &7\"{title}\" &f— Page {page}/{total}"
+
+  # Shown when the requested page number is out of range.
+  invalid-page: "&e[LR] &fPage {page} does not exist. This book has {total} page(s)."
+
+  # Shown when the page argument is not a valid number.
+  invalid-number: "&e[LR] &f\"{input}\" is not a valid page number."
+
+  # Shown after a successful configuration reload.
+  reloaded: "&e[LR] &aConfiguration reloaded."
